@@ -66,7 +66,7 @@ input:focus {
     border: none;
     outline: none;
 }
-nav ul{
+nav .list{
     list-style: none;
     display: flex;
     gap: 2rem;
@@ -160,17 +160,17 @@ main{
     color: black;
 }
 .course-info{
+    width: 100vw;
     display: flex;
-    padding: 2.5rem;
-    width: 100%;
+    padding: 2rem;
     height: 30vh;
     background-color: #F7F9FA;
     gap: 3rem;
     align-items: center;
 }
 .course{ 
-    width: auto;
-    height: 60px;
+    width: 100%;
+    height: auto;
     background-color: #E4E8EB;
     text-align: center;
     padding: 2rem 1.5rem;
@@ -193,6 +193,7 @@ main{
 }
 .cards-container{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     height: auto;
     margin-left: 1rem;
@@ -200,8 +201,8 @@ main{
 }
 .card{
     width: 300px;
-    border: 1px solid black;
-    box-shadow: 0px 0px 20px gray;
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px gray;
 }
 .card img{
     width: 100%;
@@ -211,4 +212,128 @@ main{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1rem;
+}
+.card-body h4{
+    text-transform: capitalize;
+    font-size: 1.5rem;
+    line-height: 1.5em;
+    
+}
+.card-body p{
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    text-transform: capitalize;
+}
+.rating{
+    padding: 1rem;
+}
+.rating span{
+   color:#4D4B35; 
+}
+.rating h5{
+    padding: 1rem;
+    font-size: 1.2rem;
+    color: #021318;
+}
+.rating p{
+    padding: 1rem;
+    color:#B4690E;
+    font-size: 1.5rem;
+}
+.rating button{
+    width: 100px;
+    padding: 1rem;
+    height: auto;
+    background-color: #ECEB98;
+    color: #223509;
+    font-size: 1.2rem;
+}
+.organization-container h4{
+   font-size: 2.2rem;
+   padding: 1rem 1.5rem;
+   font-weight: 600;
+}
+.organization-container p{
+    color: #2d2f31;
+    font-size: 1.8rem;
+    padding:  1rem 1.5rem;
+}
+.plan{
+    margin: 2rem 1.5rem;
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+.plans .blue{
+    border-top: 5px solid #5022C3;
+}
+.plans{
+    width: 30%;
+    height: auto;
+    border: 1px solid #B0B4B6;
+    box-shadow: 0px 0px 20px gray;
+}
+.plan-container{
+    border-top: 5px solid #A435F0;
+    background-color: #F7F9FA;
+    padding: 2rem;
+}
+.plan-container h3{
+    font-size: 2rem;
+    text-transform: capitalize;
+}
+.plan-container p{
+    font-size: 1.2rem;
+}
+.plan-container i{
+    padding: 1.2em;
+    color: #B0B4B6;
+    font-size: 1.2rem;
+}
+.plan-container span{
+    font-size: 1.5rem;
+}
+.month{
+    padding: 2rem 1.5rem;
+}
+.month h4{
+    font-size: 1rem 1.5rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 1.5rem;
+    font-size: 1.5rem;
+}
+.month p{
+    padding: 1rem 1.5rem;
+    font-size: 1.2rem;
+    color:#2d2f31;
+}
+.month button{
+    width:100%;
+    height: 40px;
+    color: white;
+    background-color: #021318;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+}
+nav ul{
+    list-style: none;
+    padding-left: 1.5rem;
+    font-size: 1.5rem;
+}
+nav .check-list .list-item{
+    margin-bottom: 2rem;
+}
+ .check-list .list-item::before{
+    content: '\2713';
+    color: #8CD1C6;
+    margin-right: 1rem;
+    font-size: 1rem;
+    border: 2px solid #8CD1C6;
+    border-radius: 50%;
+    font-weight: bold;
 }
