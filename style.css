@@ -6,7 +6,7 @@
 :root{
     font-size: 62.5%;
 }
-body{
+  html,body{
     width: 100%;
     height: 100%;
     font-family: "Roboto", serif;
@@ -337,3 +337,67 @@ nav .check-list .list-item{
     border-radius: 50%;
     font-weight: bold;
 }
+footer {
+    background-color:#021318;
+    color: white;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  footer h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+  }
+  
+  footer h4 {
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  footer ul {
+    list-style: none;
+  }
+
+  footer .course-item {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+
+  }
+  
+  footer .course-item:hover {
+    color: white;
+    text-decoration: underline;
+  }
+  
+  footer div {
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    footer {
+      grid-template-columns: 1fr;
+    }
+  
+    footer h3 {
+      font-size: 1.5rem;
+    }
+  
+    footer h4 {
+      font-size: 1.1rem;
+    }
+  
+    footer li {
+      font-size: 0.9rem;
+    }
+  }
+  
