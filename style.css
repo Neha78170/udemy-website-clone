@@ -337,20 +337,14 @@ nav .check-list .list-item{
     border-radius: 50%;
     font-weight: bold;
 }
-footer {
+.footer-top {
+    width: 100vw;
     background-color:#021318;
     color: white;
-    padding: 20px;
     font-family: Arial, sans-serif;
   }
-  
-  footer h3 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.8rem;
-  }
-  
   footer h4 {
+    padding-left: 1.5rem;
     margin-bottom: 10px;
     font-size: 1.5rem;
   }
@@ -365,6 +359,7 @@ footer {
     cursor: pointer;
     margin-bottom: 1rem;
     font-size: 1.2rem;
+    padding-left: 1.5rem;
 
   }
   
@@ -373,25 +368,42 @@ footer {
     text-decoration: underline;
   }
   
-  footer div {
-    margin-bottom: 20px;
-  }
-  
-  footer {
+  .footer-top {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    column-gap: 20px;
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    padding-top: 2rem;
   }
-  
+  .bottom-container{
+    width: 100vw;
+    height: 10vh;
+    background-color: black;
+    color: white;
+    border-top: 3px solid #2d2f31;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 4.8rem;
+  }
+   .bottom-container img{
+    width: 80px;
+    height: auto;
+    background-color: white;
+  }
+  .logo-and-copyright-bottom,.bottom-links-bottom {
+    font-size: 1.5rem;
+  }
+  .language-selector{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+  }
   @media (max-width: 600px) {
     footer {
       grid-template-columns: 1fr;
     }
-  
-    footer h3 {
-      font-size: 1.5rem;
-    }
-  
     footer h4 {
       font-size: 1.1rem;
     }
@@ -400,4 +412,5 @@ footer {
       font-size: 0.9rem;
     }
   }
+
   
