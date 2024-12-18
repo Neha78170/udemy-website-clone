@@ -17,35 +17,36 @@
     />
   </head>
   <body>
-     <header>
-        <img src="./img/hero.webp" alt="hero" />
-        <p>Explore</p>
-        <div class="menu-bar">
-          <i class="fa-solid fa-bars"></i>
-        </div>
-      <div class="search-bar">
-        <button><i class="fa-solid fa-magnifying-glass"></i></button>
-        <input type="text" placeholder="search for anything" />
+    <header>
+      <img src="./img/hero.webp" alt="hero" />
+      <p>Explore</p>
+      <div class="menu" id="menu-bar">
+        <i class="fa-solid fa-bars"  id="menu-icon"></i>
+        <i class="fa-regular fa-circle-xmark" id="close-icon"></i>
       </div>
-      <nav>
-        <ul class="list">
-          <li><a href="#">Plans & Pricing</a></li>
-          <li><a href="#">Udemy Business</a></li>
-          <li><a href="#">Teach on Udemy</a></li>
-        </ul>
-      </nav>
-      <div class="container-box">
-        <div class="icon-container box">
-          <i class="fas fa-shopping-cart"></i>
-          <p>Log in</p>
-        </div>
-        <div class="icon-container1 box">
-          <p class="icon-sign">Sign up</p>
-          <i class="fas fa-globe" id="icon"></i>
-        </div>
+    <div class="search-bar">
+      <button><i class="fa-solid fa-magnifying-glass"></i></button>
+      <input type="text" placeholder="search for anything" />
+    </div>
+    <nav id="navbar">
+      <ul class="list">
+        <li><a href="#">Plans & Pricing</a></li>
+        <li><a href="#">Udemy Business</a></li>
+        <li><a href="#">Teach on Udemy</a></li>
+      </ul>
+    </nav>
+    <div class="container-box">
+      <div class="icon-container box">
+        <i class="fas fa-shopping-cart"></i>
+        <p>Log in</p>
       </div>
-    </header>
-    <!-- <main class="slide-container">
+      <div class="icon-container1 box">
+        <p class="icon-sign">Sign up</p>
+        <i class="fas fa-globe" id="icon"></i>
+      </div>
+    </div>
+  </header>
+     <main class="slide-container">
         <div class="slides">
         <img src="./img/slider1.jpg" alt="slider1">
         <div class="slides-text">
@@ -63,15 +64,15 @@
           </div> 
           <span class="arrow prev">&#10094;</span>
           <span class="arrow next">&#10095;</span>
-    </main> -->
-     <!-- <section class="skills">
+    </main> 
+      <section class="skills">
       <h3>All the skills you need in one place</h3>
       <p>
         From critical skills to technical topics,Udemy supports your professionl
         development.
       </p>
-     </section> -->
-    <!-- <section class="certifications">
+     </section> 
+     <section class="certifications">
       <ul>
         <li>Data Science</li>
         <li>IT Cretifications</li>
@@ -80,8 +81,8 @@
         <li>Communicatin</li>
         <li>Businesss Analytics & Intelligence</li>
       </ul>
-    </section> -->
-    <!-- <section class="course-info">
+    </section>
+     <section class="course-info">
       <div class="course-1 course">
         <h4>ChatGPT</h4>
         <p class="white">3M + learners</p>
@@ -110,9 +111,9 @@
         <h4>Statistics</h4>
         <p>46.6M + learners</p>
       </div>
-    </section> -->
-    <!-- <section class="cards-container">
-      Card 1
+    </section> 
+    <section class="cards-container">
+      <!-- Card 1 -->
        <div class="card">
         <img src="./img/chatgpt.jpg" alt="ChatGPT guide cover" />
         <div class="card-body">
@@ -129,7 +130,7 @@
         </div>
       </div>
 
-      Card 2
+      <!-- Card 2 -->
        <div class="card">
         <img src="./img/chatgpt-master.jpg" alt="chatgpt-mastercover" />
         <div class="card-body">
@@ -145,7 +146,7 @@
         </div>
       </div>
 
-      Card 3
+      <!-- Card 3 -->
        <div class="card">
         <img src="./img/AI.jpg" alt="JavaScript guide cover" />
         <div class="card-body">
@@ -160,7 +161,7 @@
           <h5>&#8377; 7999</h5>
         </div>
       </div>
-      card-4
+      <!-- card-4 -->
       <div class="card">
         <img src="./img/artifical-intelligence.jpg" alt="ai" />
         <div class="card-body">
@@ -175,16 +176,16 @@
           <h5>&#8377; 799</h5>
         </div>
       </div>
-    </section> -->
-     <!-- <section class="organization-container">
+    </section> 
+      <section class="organization-container">
       <h4>Accelrate growth-for you or your organization</h4>
       <p>
         Reach goals faster with one of our plans or programs. Try one free today
         or contact seals to learn more.
       </p>
-    </section> -->
-     <!-- <section class="plan">
-      plans-1
+    </section> 
+      <section class="plan">
+      <!-- plans-1 -->
       <div class="plans">
         <div class="plan-container">
           <h3>personal plans</h3>
@@ -206,7 +207,7 @@
           </ul>
         </nav>
       </div>
-      plans-2
+      <!-- plans-2 -->
       <div class="plans">
         <div class="plan-container blue">
           <h3>team plan</h3>
@@ -229,7 +230,7 @@
           </ul>
         </nav>
       </div>
-      plans-3
+      <!-- plans-3 -->
       <div class="plans">
         <div class="plan-container blue">
           <h3>enterprise plans</h3>
@@ -260,11 +261,10 @@
           </ul>
         </nav>
       </div>
-    </section>  -->
-    <!-- <footer>
+    </section> 
+      <footer>
       <div class="footer-top">
-       Certifications by Issuer
-        <h4>Certifications by Issuer</h4>
+       <!-- Certifications by Issuer -->
          <div>
           <h4>Certification  by Issuer</h4>
         <ul>
@@ -275,9 +275,9 @@
           <li class="course-item">Tableau Certification</li>
           <li class="course-item">See All Certifications</li>
         </ul>
- </div> -->
+        </div>
       <!-- Certifications by Skill -->
-      <!-- <div>
+       <div>
         <h4>Certifications by Skill</h4>
         <ul>
           <li class="course-item">Cybersecurity Certification</li>
@@ -287,10 +287,10 @@
           <li class="course-item">HR Management Certification</li>
           <li class="course-item">See All Certifications</li>
         </ul>
-      </div> -->
+      </div>
 
       <!-- Web Development -->
-      <!-- <div>
+       <div>
         <h4>Web Development</h4>
         <ul>
           <li class="course-item">Web Development</li>
@@ -302,7 +302,7 @@
       </div> -->
 
       <!-- IT Certifications -->
-      <!-- <div>
+       <div>
         <h4>IT Certifications</h4>
         <ul>
           <li class="course-item">Amazon AWS</li>
@@ -310,10 +310,10 @@
           <li class="course-item">AZ-900: Microsoft Azure Fundamentals</li>
           <li class="course-item">Kubernetes</li>
         </ul>
-      </div> -->
+      </div> 
 
       <!-- Leadership -->
-      <!-- <div>
+       <div>
         <h4>Leadership</h4>
         <ul>
           <li class="course-item">Leadership</li>
@@ -322,10 +322,10 @@
           <li class="course-item">Personal Productivity</li>
           <li class="course-item">Emotional Intelligence</li>
         </ul>
-      </div> -->
+      </div> 
 
       <!-- Data Science -->
-      <!-- <div>
+       <div>
         <h4>Data Science</h4>
         <ul>
           <li class="course-item">Data Science</li>
@@ -334,10 +334,10 @@
           <li class="course-item">ChatGPT</li>
           <li class="course-item">Deep Learning</li>
         </ul>
-      </div> -->
+      </div> 
 
       <!-- Communication -->
-      <!-- <div>
+       <div> 
         <h4>Communication</h4>
         <ul>
           <li class="course-item">Communication Skills</li>
@@ -346,9 +346,9 @@
           <li class="course-item">Writing</li>
           <li class="course-item">PowerPoint</li>
         </ul>
-      </div> -->
+      </div> 
 
-      <!-- Business Analytics & Intelligence
+       <!-- Business Analytics & Intelligence -->
       <div>
         <h4>Business Analytics & Intelligence</h4>
         <ul>
@@ -359,7 +359,7 @@
           <li class="course-item">Business Analysis</li>
         </ul>
       </div>
-    </div>
+     </div> 
       <div class="bottom-container">
         <img src="./img/footer.png" alt="hero" />
         <div class="logo-and-copyright-bottom">&copy; 2024 Udemy,Inc.</div>
@@ -368,8 +368,8 @@
           <i class="fas fa-globe" id="icon"></i>
           <p>English</p>
         </div>
-      </div> -->
-    <!-- </footer>  --> 
+      </div> 
+     </footer> 
 
     <script src="script.js"></script>
   </body>

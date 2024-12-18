@@ -1,3 +1,23 @@
+// header ki liye
+  const menuIcon = document.getElementById('menu-icon');
+  const closeIcon = document.getElementById('close-icon');
+  const navbar = document.getElementById('navbar');
+
+  menuIcon.addEventListener('click', () => {
+    navbar.classList.add('active');
+     menuIcon.style.display = 'none';
+    closeIcon.style.display = 'block';
+  });
+
+  closeIcon.addEventListener('click', () => {
+    navbar.classList.remove('active');
+    closeIcon.style.display = 'none';
+    menuIcon.style.display = 'block';
+  });
+
+
+// slider ki liye
+
 let flag = 0;
 
 slideShow(flag);
